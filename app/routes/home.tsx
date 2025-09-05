@@ -1,13 +1,13 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
+import { PromptGenerator } from "../components/promptGenerator";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "プロンプト生成アプリ" },
+    { name: "description", content: "8つの要素を入力して、効果的なプロンプトを自動生成します" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <PromptGenerator />;
 }
